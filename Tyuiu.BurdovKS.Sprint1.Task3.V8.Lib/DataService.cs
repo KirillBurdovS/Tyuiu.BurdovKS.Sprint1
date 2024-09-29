@@ -9,7 +9,7 @@ namespace Tyuiu.BurdovKS.Sprint1.Task3.V8.Lib
         public double IncomeAmount(double startAmount, double percent, double timeDays)
         {
 
-            double res = startAmount * (percent / 365) * timeDays;
+            double res = startAmount * (percent / 365) * timeDays / 100;
 
 
             double amount = Math.Round(res, 3);
