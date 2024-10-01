@@ -1,8 +1,8 @@
 
-using Tyuiu.BurdovKS.Sprint1.Task5.V1.Lib;
+using Tyuiu.BurdovKS.Sprint1.Task6.V16.Lib;
 
 
-namespace Tyuiu.BurdovKS.Sprint1.Task5.V1.Test
+namespace Tyuiu.BurdovKS.Sprint1.Task6.V16.Test
 {
     [TestClass]
     public class DataServiceTest
@@ -12,19 +12,24 @@ namespace Tyuiu.BurdovKS.Sprint1.Task5.V1.Test
         {
             DataService ds = new DataService();
 
-            double x1 = -1;
-            double y1 = 5;
 
 
-            double x2 = 3;
-            double y2 = 5;
 
-            double res = ds.DistanceBetweenDots(x1,y1,x2,y2);
+            string test = "!?";
 
 
-            double wait = 4.0;
+            bool res = ds.CheckSpecSymbols(test);
 
-            Assert.AreEqual(wait, res, 0.001);
+            bool wait = true;
+
+
+            Assert.AreEqual(res, wait);
+
+
+
+
+
+
 
 
 
