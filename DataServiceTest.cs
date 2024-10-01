@@ -1,8 +1,7 @@
 
-using Tyuiu.BurdovKS.Sprint1.Task6.V16.Lib;
+using Tyuiu.BurdovKS.Sprint1.Task7.V30.Lib;
 
-
-namespace Tyuiu.BurdovKS.Sprint1.Task6.V16.Test
+namespace Tyuiu.BurdovKS.Sprint1.Task7.V30.Test
 {
     [TestClass]
     public class DataServiceTest
@@ -10,28 +9,23 @@ namespace Tyuiu.BurdovKS.Sprint1.Task6.V16.Test
         [TestMethod]
         public void ValidExpression()
         {
+
             DataService ds = new DataService();
 
+            double x = 2;
+
+            double y = 1;
 
 
-
-            string test = "!?";
-
-
-            bool res = ds.CheckSpecSymbols(test);
-
-            bool wait = true;
+            double z = 10.539214619068614;
 
 
-            Assert.AreEqual(res, wait);
-
+            double actualZ = ds.Calculate(x, y);
 
 
 
 
-
-
-
+            Assert.AreEqual(z, actualZ);
 
 
 
